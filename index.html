@@ -26,7 +26,10 @@
       font-family: 'Red Hat Display', sans-serif;
       background: url('images/pattern-background-desktop.svg'), hsl(225, 100%, 98%);
       background-repeat: no-repeat;
-
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
         color: hsl(224, 23%, 55%);
     }
 
@@ -37,7 +40,6 @@
 
     .order-summary {
       border-radius: 1rem;
-      margin-top: 35%;
     }
 
     .cancel-container a {
@@ -81,9 +83,10 @@
       padding-left: 2.1rem;
     }
 
-    h3 {
+    h1 {
       color: hsl(223, 47%, 23%);
       font-weight: 900;
+      font-size: 2rem;
     }
     
     .proceed {
@@ -124,49 +127,53 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
-        <div class="card order-summary">
-          <img src="images/illustration-hero.svg" class="card-img-top" alt="person dancing with headphones on.">
-          <div class="card-body">
-            <h3 class="card-title text-center mt-4 mb-4">Order Summary</h5>
-              <div class="row justify-content-center">
-                <div class="col-8 mb-4">
-                  <p class="card-text text-center intro">  You can now listen to millions of songs, audiobooks, and podcasts on any 
-                    device anywhere you like!</p>
-                </div>
-              </div>
-              <div class="plan-container mx-auto">
+  <main>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card order-summary">
+            <img src="images/illustration-hero.svg" class="card-img-top" alt="person dancing with headphones on.">
+            <div class="card-body">
+              <h1 class="card-title text-center mt-4 mb-4">Order Summary</h1>
                 <div class="row justify-content-center">
-                  <div class="col-2 music-icon">
-                    <img src="images/icon-music.svg" alt="music symbol icon.">
-                  </div>
-                  <div class="col-6 plan-pricing">
-                    <p class="plan">Annual Plan</p>
-                    <p>$59.99/year</p>
-                  </div>
-                  <div class="col-4 change-plan">
-                    <a href="#">Change</a>
+                  <div class="col-8 mb-4">
+                    <p class="card-text text-center intro">  You can now listen to millions of songs, audiobooks, and podcasts on any 
+                      device anywhere you like!</p>
                   </div>
                 </div>
-              </div>
-              <div class="continue-container text-center mt-4 mb-4">
-                <button class="btn btn-primary proceed">Proceed to Payment</button>
-              </div>
-              <div class="cancel-container text-center mb-4">
-                <a class="cancel" href="#">Cancel Order</a>
-              </div>
+                <div class="plan-container mx-auto">
+                  <div class="row justify-content-center">
+                    <div class="col-2 music-icon">
+                      <img src="images/icon-music.svg" alt="music symbol icon.">
+                    </div>
+                    <div class="col-6 plan-pricing">
+                      <p class="plan">Annual Plan</p>
+                      <p>$59.99/year</p>
+                    </div>
+                    <div class="col-4 change-plan">
+                      <a href="#">Change</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="continue-container text-center mt-4 mb-4">
+                  <button class="btn btn-primary proceed">Proceed to Payment</button>
+                </div>
+                <div class="cancel-container text-center mb-4">
+                  <a class="cancel" href="#">Cancel Order</a>
+                </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </div>
   
-  <div class="attribution mt-5">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Francis Bell</a>.
-  </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="attribution mt-5">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Francis Bell</a>.
+    </div>
+  </footer>
 </body>
 </html>
